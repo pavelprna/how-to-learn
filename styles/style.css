@@ -9,8 +9,14 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-div {
-  border: 1px solid red;
+div, ul, li {
+  /* border: 1px solid red; */
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -25,7 +31,7 @@ div {
 }
 
 .logo_place_header {
-  background: url(/images/logo_place_header.svg);
+  background: url(../images/logo_place_header.svg);
   height: 32px;
   width: 183px;
   position: absolute;
@@ -114,6 +120,50 @@ div {
 
 .two-columns__span-accent {
   font-weight: 700;
+}
+
+/* Digits */
+
+.digits {
+  margin: 0 auto 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title {
+  width: 60%;
+  text-align: center;
+  line-height: 1.15em;
+  font-size: 60px;
+  font-weight: 700;
+}
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+}
+.table {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+.table__heading {
+  line-height: 1.15em;
+  font-size: 24px;
+  font-weight: 700;
+}
+.table__text {
+  margin: 20px 0 0;
+  line-height: 1.2em;
+  font-size: 18px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
