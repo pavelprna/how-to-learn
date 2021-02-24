@@ -19,6 +19,15 @@ ul, li {
   padding: 0;
 }
 
+.link:link, .link:visited {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.link::after {
+  content: ' →';
+}
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -58,9 +67,8 @@ ul, li {
   z-index: 2;
 }
 
-.header__link:link {
-  color: #2f80ed;
-  text-decoration: none;
+.header__link {
+
 }
 
 .header__main-illustration {
@@ -122,7 +130,7 @@ ul, li {
   font-weight: 700;
 }
 
-/* Digits */
+/* !Digits */
 
 .digits {
   margin: 0 auto 100px;
@@ -164,6 +172,37 @@ ul, li {
   margin: 20px 0 0;
   line-height: 1.2em;
   font-size: 18px;
+}
+
+/* !Feynman */
+
+.feynman {
+  padding-top: 100px;
+  width: 100%;
+  height: 790px;
+  background: #f2f2f2 url(../images/feynman.png) bottom left no-repeat;
+  position: relative;
+  text-align: center;
+}
+.feynman__title {
+  width: 648px;
+  margin: 0 auto;
+  line-height: 1.15em;
+  font-size: 120px;
+  font-weight: 700;
+}
+.feynman__subtitle {
+  margin-top: 70px;
+  display: inline-block;
+  line-height: 51px;
+  font-size: 36px;
+}
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  right: 48px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
