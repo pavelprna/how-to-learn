@@ -1,13 +1,13 @@
-.header__link:link {
+.link-arrow:link {
   color: #2f80ed;
   text-decoration: none;
   transition: opacity 300ms;
 }
 
-.header__link::after {
+.link-arrow::after {
   content: ' →';
 }
 
-.header__link:hover {
+.link-arrow:hover {
   opacity: .7;
 }
